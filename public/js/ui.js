@@ -17,7 +17,7 @@ const renderRecipe = (data, id) => {
     <div class="card-panel recipe white row" data-id="${id}">
       <img src="/img/dish.png" alt="recipe thumb">
       <div class="recipe-details">
-        <div class="recipe-title">${data.name}</div>
+        <div class="recipe-title">${data.title}</div>
         <div class="recipe-ingredients">${data.ingredients}</div>
       </div>
       <div class="recipe-delete">
@@ -25,6 +25,7 @@ const renderRecipe = (data, id) => {
       </div>
     </div>
   `;
+  
   recipes.innerHTML += html;
 
 };
